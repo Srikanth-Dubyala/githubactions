@@ -15,10 +15,10 @@ jobs:
     steps:
       # step 1: check out the code from repository
       - name: Check out code
-        users: actions/checkout@v2
+        uses: actions/checkout@v2
       # step2 :set up python enviornment
       - name: Set up Python
-        users: actions/setup-python@v2
+        uses: actions/setup-python@v2
         with:
           python-version: '3.8'
       # step3 install dependencies
